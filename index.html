@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOCC Slice Space</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;  /* Optional background color */
+        }
+        #gameCanvas {
+            border: 2px solid black;  /* Optional border for visibility */
+        }
+        #game-over {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            color: black;
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="game-over">Game Over! <button onclick="restartGame()">Restart</button></div>
+    <script src="game.js"></script>  <!-- Ensure your JavaScript is linked correctly -->
+</body>
+</html>
